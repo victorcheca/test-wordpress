@@ -1,0 +1,83 @@
+/*
+      Theme Name: Test theme
+      Theme URI: URL del theme 
+      Version: Version del theme 
+      Author: Víctor Sisón Checa 
+      Author URI: URL del autor */ 
+
+*{
+       box-sizing: border-box;
+}
+
+body{
+       margin:0;
+       padding: 0;
+       width: 100%;
+       border:3px red solid; 
+       height: 100%;
+}
+
+.header{
+       width: 100%;
+       display:flex;
+       justify-content:space-between;
+       align-items: center;
+       position:sticky;
+       z-index: 2;
+       top: 0;
+       padding: 1.4rem;
+       background-color: #FFCC00;
+       &__nav{
+              display:flex;
+              align-items: center;
+              justify-content: center;
+              .menu-primary-container{
+                     display:flex;
+                     align-items: center;
+                     justify-content: center;
+                     .nav__item{
+                            display: flex;
+                            align-self: center;
+                            list-style: none;
+                            margin-bottom: 0;
+                            li a{
+                                   padding: 1rem;
+                                   text-decoration: none;
+                            }
+                     }
+              }
+              
+       }
+}
+
+
+/* .sidebar { 
+       width:30%;
+       height: 100%;
+       float: left;
+       border: 3px #FFCC00 solid; 
+       padding: 2rem;
+}  */
+
+.content { 
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       //border: 3px #CCFF00 solid; 
+       width: 70%;
+       padding: 2rem;
+} 
+.footer { 
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap:1rem;
+       
+      &__col{
+             display: flex;
+             justify-content: center;
+             text-align: left;
+             width: 100%
+             
+      }
+} 
+
